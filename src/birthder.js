@@ -180,6 +180,7 @@
         });
 
         robot.respond(/birthdays list/i, function (msg) {
+            console.log(msg.user);
             let k, message, user, users;
             users = robot.brain.data.users;
             if (users.length === 0) {
